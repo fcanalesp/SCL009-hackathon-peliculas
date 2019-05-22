@@ -1,0 +1,22 @@
+#part-one{
+    display: block;
+}
+#part-two{
+    display: none;
+}
+#part-tree{
+    display: none;
+}
+/*.Horror{
+
+    background-image: url('prueba.png')
+}
+*/
+
+#girlResult{
+    background-color: #FF6B6B;
+    margin-top:8%;
+    margin-left: 12%;
+    
+    
+}
