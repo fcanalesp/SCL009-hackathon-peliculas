@@ -1,62 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Peliculas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+ 
+  <!-- Image and text -->
+  <nav class="navbar fixed-top navbar-light ">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" id="logo" class="d-inline-block align-top"alt="">
+      
+    </a>
+  </nav>
 </head>
+
 <body>
- <div id="container">
-      <div id="part-one">
-          <form id="question-one">
-            <p>¿Como te sientes?</p>
-            <button type="button"  genre-movie="Horror" class="genre-movie Horror"><img src="img/niña_feliz.png"></button>
-            <button type="button"  genre-movie="Animation" class="genre-movie"><img src="img/niña_triste.png"></button>
-            <button type="button"  genre-movie="Drama" class="genre-movie"><img src="img/niña_aburrida.png"></button> 
-          </form>
+
+
+  <div class="container-fluid h-100">
+    <div id="menuDiv" class="row justify-content-center h-100">
+      <div class="col-xs-12 col-md-4 hidden-md-down" id="girls">
+        <h2 class=titleMenu>Chicas</h2>
+
+        <br>
+        <img src="img/niña.png" class="imageMenu" id="btnGirl" alt="...">
+       
+        
       </div>
+      <div class="col-xs-12 col-md-4 hidden-md-down" id="unicorns">
+        <h2 class=titleMenu>Unicornios</h2>
+        <br>
+        <img src="img/nobinario.png" class="imageMenu" alt="...">
+      </div>
+      <div class="col-xs-12 col-md-4 hidden-md-down" id="boys">
+        <h2 class=titleMenu>Chicos</h2>
+        <br>
+        <img src="img/niño.png" class="imageMenu" alt="...">
+      </div>
+      <div id="formGirlsOne" class="col-xs-12 col-md-12 hidden-md-down">
+        <section id="part-one">
+          <h2>¿Cómo te sientes hoy??</h2>
+          <div class="form-check">
+            <button type="button" id="girlsOption1" genre-movie="Horror" class="genre-movie Horror"><img src="img/niña_feliz.png"></button>
+          </div>
+          <div class="form-check">
+           <button type="button" id="girlsOption2" genre-movie="Animation" class="genre-movie Animation"><img src="img/niña_triste.png"></button>
+          </div>
+          <div class="form-check">
+            <button type="button" id="girlsOption3" genre-movie="Drama" class="genre-movie Drama"><img src="img/niña_aburrida.png"></button> 
+          </div>
+         
 
-        <div id="part-two">
-             <form id="question-two">
-                <p>¿Con cuanto tiempo dispones?</p>
-                <button type="button"  time-movie="Short" class="time-movie">5-30 min</button>
-                <button type="button"  time-movie="Medium" class="time-movie">31-60 min</button>
-                <button type="button"  time-movie="Long" class="time-movie">61-150 min</button> 
-             </form>
-         </div>
+          
+        </section>
+        <section id="part-two">
+          <h2>¿Cuanto tiempo tienes??</h2>
+          <div class="form-check">
+             <button type="button" id="girlsOption1" time-movie="Short" class="time-movie">5-30 min</button>
+            
+          </div>
 
-     <div id="part-tree">
-          <form id="question-tree">
-            <p>¿Estas...?</p>
-            <button type="button"  random-movie="Random" class="random-movie">Solo</button>
-            <button type="button"  random-movie="Random" class="random-movie">Acompañado</button>
+          <div class="form-check">
+               <button type="button" id="girlsOption2"  time-movie="Medium" class="time-movie">31-60 min</button>
+            
+          </div>
+          <div class="form-check">
+               <button type="button" id="girlsOption3"  time-movie="Long" class="time-movie">61-150 min</button>
+          </div>
+         
+        </section>
+        <section id="part-tree">
+          <h2>¿Con quien estas ??</h2>
+          <div class="form-check">
+              <button type="button" id="girlsOption1" random-movie="Random" class="random-movie">Solo</button>
 
-          </form>
-     </div>
-        <div id="part-four">
+         
+          <div class="form-check">
+              <button type="button" id="girlsOption2" random-movie="Random" class="random-movie">Acompañado</button>
 
-        </div>
- 
-
-
-
- 
- 
- </div>
-    
-
-
-
-    
-    <script src="functions.js"></script>
+          </div>
+         
+        </section>
+              <div id="part-four">
+       
+      </div>
+    </div>
+   
+       <script src="functions.js"></script>
         <script src="movies.js"></script>
         <script src="main.js"></script> 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+      
 </body>
+
+
 </html>

@@ -1,3 +1,147 @@
+
+nav.navbar, navbar-toggler{
+    z-index: 100;
+    position: sticky;
+    height:6rem;
+    font-family: Arial;
+    font-size: 3vw;
+    display:center;
+    background-color: #556270;
+    font-family: 'Monoton';
+ 
+  }
+
+  #logo{
+ width:100%;
+}
+  html, body {
+   
+    width:100%; 
+    height:100%;
+    padding:0px;
+    margin:0px;
+  }
+
+  .titleMenu{
+    margin: auto; 
+    width: 50%;
+    height: center;
+    font-size: 4vw;
+    margin-top:2rem;
+    margin-bottom:2rem;
+  }
+
+  .imageMenu {
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: 80;
+  }
+
+  #girls{
+      background-color: #556270;
+  }
+  #girls:hover{
+      background-color: aquamarine
+  }
+
+  #boys{
+    background-color: #556270;
+}
+#boys:hover{
+    background-color: yellow;
+}
+
+
+#unicorns{
+    background-color: #556270;
+    height:100%;
+}
+
+#unicorns:hover{
+    background-color: #FF24A4;
+    height:100%;
+}
+.imageMenu{
+    /* height:75%; */
+    width: 90%;
+}
+
+
+.btnMenu{
+background-color: #FF24A4;;
+border-color: #FF24A4;;
+margin-bottom:6rem;
+border-radius: 1rem;
+margin: auto; 
+margin-top:2rem;
+width: 50%;
+align-self:50%;
+
+
+}
+
+ 
+ 
+#formGirlsOne{
+    background-color:#46E4BC;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.form-check{
+    font-size: 3.5vw;
+    
+}
+
+#feelAnswerGirls,#timeAnswerGirls, #whitAnswerGirls{
+    margin-left:17%;
+    margin-top:10%;
+}
+.form-check-input{
+    margin-top: 2rem;
+    size: 1rem;
+}
+.girlsOption1{
+    background-color: #B431F4;
+    height:3.5rem;
+    width: 60%;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.girlsOption2{
+    background-color: #ACE900;
+    height:3.5rem;
+    width: 60%;
+    text-align: center;
+    text-emphasis: margin;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.girlsOption3{
+    background-color: #FF24A4;
+    height:3.5rem;
+    width: 60%;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.girlsOption4{
+  background-color: yellow;
+  height:3.5rem;
+  width: 60%;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+
 #part-one{
     display: block;
 }
@@ -18,5 +162,4 @@
     margin-top:8%;
     margin-left: 12%;
     
-    
-}
+    }
