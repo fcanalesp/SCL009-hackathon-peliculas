@@ -1,3 +1,4 @@
+
 nav.navbar, navbar-toggler{
     z-index: 100;
     position: sticky;
@@ -83,21 +84,8 @@ align-self:50%;
 
 }
 
-  #navbarDropdown{
-    background-color:#46E4BC;
-   
-
-  }
-  .dropdown-item{
-    background-color:#B431F4;
-  }
-  nav.navbar li{
-    background-color: #343a40;
-  }
-  #otro{
-  color: #B431F4,#CC37C2,#FF24A4,#ACE900,#46E4BC,#B431F4,#CC37C2,#FF24A44;
-}
-
+ 
+ 
 #formGirlsOne{
     background-color:#46E4BC;
     display: flex;
@@ -154,26 +142,24 @@ align-self:50%;
 }
 
 
-#girlResult{
-    background-color: #CC37C2;
-    margin-top:10%;
-    
-    
+#part-one{
+    display: block;
 }
+#part-two{
+    display: none;
+}
+#part-tree{
+    display: none;
+}
+/*.Horror{
 
-.btnResult{
-   
-        width:4rem;
-        height:4rem;
-        background-color:#46E4BC;
-        margin: 5px;
-        margin-top:3rem;
-        padding:10px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-        border-radius: 50px;
-        font-size:11px;
-        line-height:32px;
-        float:left;
-      
+    background-image: url('prueba.png')
 }
+*/
+
+#girlResult{
+    background-color: #FF6B6B;
+    margin-top:8%;
+    margin-left: 12%;
+    
+    }
