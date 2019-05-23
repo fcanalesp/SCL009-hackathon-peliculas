@@ -147,4 +147,45 @@ const MOVIES ={
 "Runtime": "20 min",
 "Type": "Short"
 },
+
+{
+"Title": "Shôjo tsubaki: Chika gentô gekiga",
+"Genre": "Animation, Drama, Horror",
+"Language": "Japanese",
+"Plot": "A little orphaned girl joins a freak-show circus troupe whose members rape and abuse her. She then finds a glimmer of hope in the enigmatic magician who joins the group.",
+"Poster": "https://m.media-amazon.com/images/M/MV5BZGVhNGVjZjEtMTUyNS00NmEwLWE0ODMtNzhkZTk4Njc1ZWEzXkEyXkFqcGdeQXVyNjExODE1MDc@._V1_SX300.jpg",
+"Runtime": "56 min",
+"Type": "Medium",
+},
+
+{
+"Title": "Dragon Ball Z: Fusion Reborn",
+"Genre": "Animation, Action, Sci-Fi",
+"Language": "Japanese",
+"Plot": "The universe is thrown into dimensional chaos as the dead come back to life. Now Goku and Vegeta must track down the cause of this uproar.",
+"Poster": "https://m.media-amazon.com/images/M/MV5BOWRiNDJlNzAtZjk3ZC00NDhjLTlmNzMtNTJiNDM2NDU3NjI2XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg",
+"Runtime": "51 min",
+"Type": "Medium",
+},
+
+{
+"Title": "The Call of Cthulhu",
+"Genre": "Fantasy, Horror, Mystery, Thriller",
+"Language": "English, French, Spanish, Italian, German",
+"Plot": "While sorting the affairs of his late Uncle, a man accidentally stumbles across a series of dark secrets connected to an ancient horror waiting to be freed.",
+"Poster": "https://m.media-amazon.com/images/M/MV5BOTU3OTU1MDkyNF5BMl5BanBnXkFtZTcwODEyNDk5OA@@._V1_SX300.jpg",
+"Runtime": "47 min",
+"Type": "Medium",
+},
+{
+"Title": "Five Nights at Freddy's 4 the Movie",
+"Genre": "Horror",
+"Language": "English",
+"Plot": "One day a child goes to Freddy Fazbear's Pizza restaurant. The next day strange things start to happen. A package arrives at his front door, an invitation to an anonymous birthday party. ...",
+"Poster": "https://m.media-amazon.com/images/M/MV5BZGIwNzc4YmItZTkwNi00ZTg4LThiNDUtNmJiODYyY2Q5Mjc0L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNzA3NDI3NTY@._V1_SX300.jpg",
+"Runtime": "60 min",
+"Type": "movie",
+}
+
+
 ]};;

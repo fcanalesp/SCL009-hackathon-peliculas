@@ -1,106 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Peliculas</title>
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
- 
   <!-- Image and text -->
   <nav class="navbar fixed-top navbar-light ">
     <a class="navbar-brand" href="#">
-      <img src="img/logo.png" id="logo" class="d-inline-block align-top"alt="">
-      
+      <img src="img/logo.png" id="logo" class="d-inline-block align-top" alt="">
     </a>
   </nav>
 </head>
-
 <body>
-
-
   <div class="container-fluid h-100">
-    <div id="menuDiv" class="row justify-content-center h-100">
-      <div class="col-xs-12 col-md-4 hidden-md-down" id="girls">
-        <h2 class=titleMenu>Chicas</h2>
-
-        <br>
-        <img src="img/niña.png" class="imageMenu" id="btnGirl" alt="...">
-       
+    <section id="part-select" class="row justify-content-center h-100">
+      <!-- <section id="part-select"> -->
+        <div class="col-xs-12 col-md-4 hidden-md-down" id="girls">
+          <h2 class=titleMenu>Chicas</h2>
+          <br>
+          <img src="img/niña.png" id="btn-girl" class="imageMenu">
+        </div>
+        <div class="col-xs-12 col-md-4 hidden-md-down" id="unicorns">
+          <h2 class=titleMenu>Unicornios</h2>
+          <br>
+          <img src="img/nobinario.png" id="btn-unicorn" class="imageMenu" alt="...">
+        </div>
+        <div class="col-xs-12 col-md-4 hidden-md-down" id="boys">
+          <h2 class=titleMenu>Chicos</h2>
+          <br>
+          <img src="img/niño.png" id="btn-boy" class="imageMenu" alt="...">
+        </div>
+    </section>
+<!-- parte chicas -->
+      <section id="partOneGirls">
+        <h2>¿Cómo te sientes hoy??</h2>
+        <div class="form-check">
+            <button type="button"id="girlsOption1" genre-movie="Horror" class="genre-movie Horror">Feliz</button>
+        </div>
+        <div class="form-check">
+            <button type="button"id="girlsOption2" genre-movie="Animation" class="genre-movie Animation" >Triste</button>
+        </div>
+        <div class="form-check">
+            <button type="button"id="girlsOption3" genre-movie="Drama" class="genre-movie Drama" >Aburrida</button>
+        </div>
+      </section>
+      <section id="partTwoGirls">
+        <h2>¿Cuanto tiempo tienes??</h2>
+        <div class="form-check">
+          <button type="button" id="girlsOption1" time-movie="Short" class="time-movie">Algo Rápido(15-30 min)</button>
+        </div>
+        <div class="form-check">
+          <button type="button" id="girlsOption2" time-movie="Medium" class="time-movie">Sacando la Vuelta(60 min)</button>
+        </div>
+        <div class="form-check">
+          <button type="button" id="girlsOption3" time-movie="Long" class="time-movie">Hasta el Infinito(60 y +)</button>
+        </div>
+      </section>
+      <section id="partThreeGirls">
+        <h2>¿Con quien estas ??</h2>
+        <div class="form-check">
+          <button type="button" id="girlsOption1" random-movie="Random" class="random-movie">Solo</button>
+        </div>
+        <div class="form-check">
+          <button type="button" id="girlsOption2" random-movie="Random" class="random-movie">Acompañado</button>
+        </div>
+      </section>
+      <div id="part-four">
+      </div>
+<!-- parte Unicornios -->
+       <section id="partOneUnicorns">
         
-      </div>
-      <div class="col-xs-12 col-md-4 hidden-md-down" id="unicorns">
-        <h2 class=titleMenu>Unicornios</h2>
-        <br>
-        <img src="img/nobinario.png" class="imageMenu" alt="...">
-      </div>
-      <div class="col-xs-12 col-md-4 hidden-md-down" id="boys">
-        <h2 class=titleMenu>Chicos</h2>
-        <br>
-        <img src="img/niño.png" class="imageMenu" alt="...">
-      </div>
-      <div id="formGirlsOne" class="col-xs-12 col-md-12 hidden-md-down">
-        <section id="part-one">
-          <h2>¿Cómo te sientes hoy??</h2>
-          <div class="form-check">
-            <button type="button" id="girlsOption1" genre-movie="Horror" class="genre-movie Horror"><img src="img/niña_feliz.png"></button>
-          </div>
-          <div class="form-check">
-           <button type="button" id="girlsOption2" genre-movie="Animation" class="genre-movie Animation"><img src="img/niña_triste.png"></button>
-          </div>
-          <div class="form-check">
-            <button type="button" id="girlsOption3" genre-movie="Drama" class="genre-movie Drama"><img src="img/niña_aburrida.png"></button> 
-          </div>
-         
-
+        <h2>¿Cómo te sientes hoy??</h2>
+        <div class="form-check">
+            <button type="button"id="girlsOption1" genre-movie-uni="Horror" class="genre-movie-uni Horror">Feliz</button>
+        </div>
+        <div class="form-check">
+            <button type="button"id="girlsOption2" genre-movie-uni="Animation" class="genre-movie-uni Animation" >Triste</button>
+        </div>
+        <div class="form-check">
+            <button type="button"id="girlsOption3" genre-movie-uni="Drama" class="genre-movie-uni Drama" >Aburride</button>
+        </div>
+      </section>
           
-        </section>
-        <section id="part-two">
+  
+  
+        
+        <section id="partTwoUnicorns">
           <h2>¿Cuanto tiempo tienes??</h2>
           <div class="form-check">
-             <button type="button" id="girlsOption1" time-movie="Short" class="time-movie">5-30 min</button>
-            
-          </div>
-
-          <div class="form-check">
-               <button type="button" id="girlsOption2"  time-movie="Medium" class="time-movie">31-60 min</button>
-            
+            <button type="button" id="girlsOption1" time-movie-uni="Short" class="time-movie-uni">Algo Rápido(15-30 min)</button>
+  
           </div>
           <div class="form-check">
-               <button type="button" id="girlsOption3"  time-movie="Long" class="time-movie">61-150 min</button>
+            <button type="button" id="girlsOption2" time-movie-uni="Medium" class="time-movie-uni">Sacando la Vuelta(60 min)</button>
+  
           </div>
-         
+          <div class="form-check">
+            <button type="button" id="girlsOption3" time-movie-uni="Long" class="time-movie-uni">Hasta el Infinito(60 y +)</button>
+          </div>
+  
         </section>
-        <section id="part-tree">
+        <section id="partThreeUnicorns">
           <h2>¿Con quien estas ??</h2>
           <div class="form-check">
-              <button type="button" id="girlsOption1" random-movie="Random" class="random-movie">Solo</button>
-
-         
-          <div class="form-check">
-              <button type="button" id="girlsOption2" random-movie="Random" class="random-movie">Acompañado</button>
-
+            <button type="button" id="girlsOption1" random-movie-two="Random" class="random-movie-two">Sole</button>
           </div>
-         
+          <div class="form-check">
+            <button type="button" id="girlsOption2" random-movie-two="Random" class="random-movie-two">Acompañade</button>
+          </div>
+  
         </section>
-              <div id="part-four">
-       
-      </div>
+       <div id="part-five"></div>
+        <!-- parte Chicos -->
+      <section id="partOneBoys">
+          <h2>¿Cómo te sientes hoy??</h2>
+          <div class="form-check">
+              <button type="button"id="girlsOption1" genre-movie-boy="Horror" class="genre-movie-boy Horror">Feliz</button>
+  
+          </div>
+          <div class="form-check">
+            <button type="button"id="girlsOption2" genre-movie-boy="Animation" class="genre-movie-boy Animation" >Triste</button>
+  
+          </div>
+          <div class="form-check">
+            <button type="button"id="girlsOption3" genre-movie-boy="Drama" class="genre-movie-boy Drama" >Aburride</button>
+  
+  
+          </div>
+  
+  
+        </section>
+        <section id="partTwoBoys">
+          
+        <h2>¿Con quien estas ??</h2>
+        <div class="form-check">
+          <button type="button" id="girlsOption1" time-movie-boy="Short" class="time-movie-boy">Algo Rápido(15-30 min)</button>
+        </div>
+        <div class="form-check">
+          <button type="button" id="girlsOption2" time-movie-boy="Medium" class="time-movie-boy">Sacando la Vuelta(60 min)</button>
+        </div>
+        <div class="form-check">
+          <button type="button" id="girlsOption3" time-movie-boy="Long" class="time-movie-boy">Hasta el Infinito(60 y +)</button>
+        </div>
+      </section>
+        <section id="partThreeBoys">
+          <h2>¿Con quien estas ??</h2>
+          <div class="form-check">
+            <button type="button" id="girlsOption1" random-movie-three="Random" class="random-movie-three">Solo</button>
+          </div>
+          <div class="form-check">
+            <button type="button" id="girlsOption2" random-movie-three="Random" class="random-movie-three">Acompañado</button>
+          </div>
+  
+        </section>
+         
+        <div id="part-six"></div>
     </div>
-   
-       <script src="functions.js"></script>
-        <script src="movies.js"></script>
-        <script src="main.js"></script> 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
-      
+  </div>
+  <script src="functions.js"></script>
+  <script src="movies.js"></script>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
 </body>
-
-
 </html>
